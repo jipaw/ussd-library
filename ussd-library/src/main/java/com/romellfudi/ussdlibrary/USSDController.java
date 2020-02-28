@@ -209,8 +209,8 @@ public class USSDController implements USSDInterface, USSDApi {
         if (!isEnabled) {
             Toast.makeText(
                     context,
-                    "voipUSSD accessibility service is not enabled",
-                    Toast.LENGTH_LONG
+                    "USSD accessibility service not enabled",
+                    Toast.LENGTH_SHORT
             ).show();
             // if (context instanceof Activity) {
             //     // openSettingsAccessibility((Activity) context);
