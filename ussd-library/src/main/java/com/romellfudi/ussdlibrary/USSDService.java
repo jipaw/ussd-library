@@ -72,7 +72,7 @@ public class USSDService extends AccessibilityService {
                     USSDController.instance.callbackInvoke.responseInvoke(response);
                 else {
                     USSDController.instance.callbackMessage.responseMessage(response);
-                    USSDController.instance.callbackMessage = null;
+                    // USSDController.instance.callbackMessage = null;
                 }
             }
         }
