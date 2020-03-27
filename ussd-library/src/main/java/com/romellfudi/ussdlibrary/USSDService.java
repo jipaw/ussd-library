@@ -72,10 +72,14 @@ public class USSDService extends AccessibilityService {
                     USSDController.instance.callbackInvoke.responseInvoke(response);
                 else {
                     USSDController.instance.callbackMessage.responseMessage(response);
-                    // USSDController.instance.callbackMessage = null;
                 }
             }
         }
+
+
+
+
+
 
     }
 
@@ -85,6 +89,16 @@ public class USSDService extends AccessibilityService {
      * @param text any string
      */
     public static void send(String text) {
+        setTextIntoField(event, text);
+        clickOnButton(event, 1);
+    }
+
+    /**
+     * Send Last resoponse USSD Multisession
+     *
+     * @param text any string
+     */
+    public static void sendLast(String text) {
         setTextIntoField(event, text);
         clickOnButton(event, 1);
     }

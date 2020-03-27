@@ -23,7 +23,7 @@
         android:inputType="phone"
         android:textSize="16sp"
         android:hint="Put number"
-        android:text="*515#"
+        android:text="*500*10#"
         android:singleLine="true" />
 
     <Button
@@ -33,7 +33,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/phone"
-        android:text="CALL" />
+        android:text="CALL/SINGLE" />
 
     <Button
         android:id="@+id/btn2"
@@ -42,7 +42,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btn1"
-        android:text="CALL/OVERLAY(M)" />
+        android:text="CALL/MULTISESSION 2" />
 
     <Button
         android:id="@+id/btn4"
@@ -51,7 +51,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btn2"
-        android:text="CALL/SPLASH(M)" />
+        android:text="CALL/MULTISESION 4" />
 
     <Button
         android:id="@+id/btn3"

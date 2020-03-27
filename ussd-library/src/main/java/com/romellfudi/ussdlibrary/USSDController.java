@@ -29,7 +29,7 @@ import java.util.List;
  */
 public class USSDController implements USSDInterface, USSDApi {
 
-    protected static USSDController instance;
+    public static USSDController instance;
 
     protected Context context;
 
@@ -201,7 +201,14 @@ public class USSDController implements USSDInterface, USSDApi {
 
     @Override
     public void cancel() {
+        this.callbackMessage = null;
         USSDService.cancel();
+    }
+
+    @Override
+    public void end(String text, CallbackMessage callbackMessage) {
+        this.callbackMessage = null;
+        ussdInterface.sendData(text);
     }
 
     public static boolean verifyAccesibilityAccess(Context context) {
